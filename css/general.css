@@ -1,0 +1,211 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* general */
+html,
+body {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  height: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+/* typhography */
+h1 {
+  font-family: "Norse";
+  font-weight: bold;
+  font-size: 6.3rem;
+  line-height: 6.5rem;
+  color: var(--main-color-01);
+  position: relative;
+}
+
+section h1::after {
+  content: "_____";
+  letter-spacing: -0.3rem;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+section h1 {
+  text-align: center;
+  margin: 200px 0 110px 0;
+  color: var(--light-color);
+}
+
+h2 {
+  font-size: 2.6rem;
+  line-height: 2.8rem;
+  font-weight: normal;
+  color: var(--light-color);
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: normal;
+  color: var(--light-color);
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+h4 {
+}
+
+p {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin: 0 0 20px 0;
+}
+
+a {
+  color: var(--main-txt-color);
+}
+
+a:hover {
+  color: var(--main-title-color);
+}
+
+/* layout */
+section {
+  width: 100vw;
+}
+
+.content {
+}
+
+.txt-content {
+  max-width: 991px;
+  margin: 0 auto 0 auto;
+  padding: 0 30px 0 30px;
+  overflow: hidden;
+}
+
+.col-3-row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.col-3 {
+  grid-column: 1 / 4;
+}
+
+/* Breakpoints */
+/* 480px */
+@media all and (min-width: 480px) {
+}
+
+/* 768px */
+@media only screen and (min-width: 768px) {
+  .col-3-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .col-3 {
+    grid-column: auto;
+  }
+}
+
+/* 991px */
+@media only screen and (min-width: 991px) {
+}
+
+/* 1024px */
+@media only screen and (min-width: 1024px) {
+}
